@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OurSite.master.cs" Inherits="WebAPPAsp.net.OurSite" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="OurStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel"><h1> Cric Quick Info Site</h1></div>
+        <div class="leftPanel">
+            <marquee>
+            <img src="Images/auslogo.jpg" />
+              <img src="Images/iclogo.png" />
+              <img src="Images/wclogo.png" />
+              <img src="Images/msd.jpg" />
+              <img src="Images/DavidW.jpg" />
+              </marquee>
+        </div>
+        <div class="centerPanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="rightPanel"> 
+
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

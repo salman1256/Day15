@@ -1,0 +1,51 @@
+﻿body {
+    background-color:lightgoldenrodyellow;
+    color:darkblue;
+}
+.topPanel 
+{
+    position:absolute;
+    top:5%;
+    left:5%;
+    height:20%;
+    width:90%;
+    background-color:lightcyan;
+    color:darkmagenta;
+
+}
+.leftPanel {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 65%;
+    width: 20%;
+    background-color: lightsteelblue;
+    color:darkorange;
+}
+.centerPanel {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 65%;
+    width: 50%;
+    background-color:white;
+    color:darkblue;
+}
+.rightPanel {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    height:65%;
+    width: 10%;
+    background-color:lightsteelblue;
+    color:darkorange;
+}
+
+h1,h2 {
+    text-align:center;
+}
+img {
+    border:2px solid darkorange;
+    width:200px;
+    height:200px;
+}
